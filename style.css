@@ -1,12 +1,13 @@
 :root {
-    --bg-color: #0b110b; /* Very dark green/black */
-    --surface-color: #151d14; /* Slightly lighter dark green */
-    --surface-light: #1e281d;
-    --primary-color: #e5f159; /* Bright greenish yellow / neon yellow */
-    --primary-hover: #d2de45;
+    --bg-color: #070605; /* Very dark green/black */
+    --surface-color: #0c0a08; /* Slightly lighter dark green */
+    --surface-light: #15110c;
+    --panel-bg: linear-gradient(145deg, #100d0a 0%, #15110c 100%);
+    --primary-color: #d4af37; /* Bright greenish yellow / neon yellow */
+    --primary-hover: #f6e3a3;
     --text-primary: #ffffff;
-    --text-secondary: #a8b0a5;
-    --border-color: #2a3528;
+    --text-secondary: #b5ad9e;
+    --border-color: #241d14;
     --font-main: 'Kanit', sans-serif;
 }
 
@@ -58,7 +59,7 @@ ul {
 .btn-primary:hover {
     background-color: var(--primary-hover);
     transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(229, 241, 89, 0.3);
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
 }
 
 .btn-outline {
@@ -73,7 +74,7 @@ ul {
 }
 
 .btn-outline:hover {
-    background-color: rgba(229, 241, 89, 0.1);
+    background-color: rgba(212, 175, 55, 0.1);
     transform: translateY(-2px);
 }
 
@@ -97,7 +98,7 @@ ul {
     position: sticky;
     top: 0;
     z-index: 100;
-    background: rgba(11, 17, 11, 0.9);
+    background: rgba(7, 6, 5, 0.9);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
@@ -126,7 +127,7 @@ ul {
     font-weight: 700;
     font-size: 20px;
     line-height: 1;
-    color: #fceea4;
+    color: #f6e3a3;
 }
 .logo-text-sub {
     font-size: 11px;
@@ -192,12 +193,12 @@ ul {
 }
 
 .hero-subtitle .highlight {
-    background: rgba(229, 241, 89, 0.1);
+    background: rgba(212, 175, 55, 0.1);
     padding: 6px 12px;
     border-radius: 4px;
     font-size: 14px;
     font-weight: 500;
-    border: 1px solid rgba(229, 241, 89, 0.2);
+    border: 1px solid rgba(212, 175, 55, 0.2);
 }
 
 .hero-title {
@@ -234,13 +235,13 @@ ul {
 .icon-check-wrapper {
     width: 32px;
     height: 32px;
-    background: rgba(229, 241, 89, 0.1);
+    background: rgba(212, 175, 55, 0.1);
     border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--primary-color);
-    border: 1px solid rgba(229, 241, 89, 0.3);
+    border: 1px solid rgba(212, 175, 55, 0.3);
 }
 
 .feature-item div {
@@ -296,7 +297,7 @@ ul {
     border-radius: 20px;
     position: relative;
     z-index: 5;
-    filter: drop-shadow(0 0 40px rgba(229, 241, 89, 0.15));
+    filter: drop-shadow(0 0 40px rgba(212, 175, 55, 0.15));
 }
 
 .glow-bg {
@@ -306,7 +307,7 @@ ul {
     transform: translate(-50%, -50%);
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle, rgba(229,241,89,0.15) 0%, rgba(11,17,11,0) 60%);
+    background: radial-gradient(circle, rgba(212, 175, 55,0.15) 0%, rgba(7,6,5,0) 60%);
     z-index: 1;
     pointer-events: none;
     display: flex;
@@ -318,7 +319,7 @@ ul {
     position: absolute;
     width: 550px;
     height: 550px;
-    border: 1px dashed rgba(229, 241, 89, 0.3);
+    border: 1px dashed rgba(212, 175, 55, 0.3);
     border-radius: 50%;
     animation: rotateOrbit 30s linear infinite;
 }
@@ -330,7 +331,7 @@ ul {
 
 .circle {
     position: absolute;
-    border: 2px dashed rgba(229, 241, 89, 0.3);
+    border: 2px dashed rgba(212, 175, 55, 0.3);
     border-radius: 50%;
     opacity: 0;
     animation: radiate 4s linear infinite;
@@ -378,7 +379,7 @@ ul {
 
 .floating-badge:hover .badge-icon-full {
     transform: scale(1.05);
-    box-shadow: 0 10px 30px rgba(229, 241, 89, 0.4);
+    box-shadow: 0 10px 30px rgba(212, 175, 55, 0.4);
 }
 
 .badge-icon-full img {
@@ -401,7 +402,7 @@ ul {
 
 .floating-badge:hover {
     animation-play-state: paused;
-    box-shadow: 0 0 30px rgba(229, 241, 89, 0.4);
+    box-shadow: 0 0 30px rgba(212, 175, 55, 0.4);
 }
 
 .badge-1 { top: 5%; left: 10%; animation-delay: 0s; }
@@ -434,7 +435,7 @@ ul {
 }
 
 .service-card {
-    background: var(--surface-color);
+    background: var(--panel-bg);
     border: 1px solid var(--border-color);
     border-radius: 20px;
     padding: 30px;
@@ -461,7 +462,7 @@ ul {
 .service-card:hover {
     transform: translateY(-10px);
     border-color: var(--primary-color);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.6), 0 0 20px rgba(229, 241, 89, 0.1);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.6), 0 0 20px rgba(212, 175, 55, 0.1);
 }
 
 .service-card:hover::before {
@@ -522,7 +523,7 @@ ul {
     display: flex;
     align-items: center;
     gap: 60px;
-    background: var(--surface-color);
+    background: var(--panel-bg);
     border: 1px solid var(--border-color);
     border-radius: 30px;
     padding: 60px;
@@ -571,10 +572,10 @@ ul {
     width: 24px;
     height: 24px;
     border-radius: 50%;
-    background: rgba(229, 241, 89, 0.1);
+    background: rgba(212, 175, 55, 0.1);
     color: var(--primary-color);
     font-size: 12px;
-    border: 1px solid rgba(229, 241, 89, 0.3);
+    border: 1px solid rgba(212, 175, 55, 0.3);
 }
 
 /* Testimonials Section */
@@ -589,7 +590,7 @@ ul {
 
 .stats-box {
     flex: 2;
-    background: var(--surface-color);
+    background: var(--panel-bg);
     border: 1px solid var(--border-color);
     border-radius: 20px;
     padding: 40px;
@@ -650,7 +651,7 @@ ul {
 
 .review-box {
     flex: 1;
-    background: var(--surface-color);
+    background: var(--panel-bg);
     border: 1px solid var(--border-color);
     border-radius: 20px;
     padding: 40px;
@@ -722,8 +723,8 @@ ul {
 }
 
 .cta-banner {
-    background: linear-gradient(90deg, rgba(229,241,89,0.1) 0%, rgba(11,17,11,1) 100%);
-    border: 1px solid rgba(229, 241, 89, 0.3);
+    background: linear-gradient(90deg, rgba(212, 175, 55,0.1) 0%, rgba(7,6,5,1) 100%);
+    border: 1px solid rgba(212, 175, 55, 0.3);
     border-radius: 20px;
     padding: 40px 60px;
     position: relative;
@@ -774,7 +775,7 @@ ul {
 
 /* Footer */
 .footer {
-    background: #080c08;
+    background: #0c0a08;
     padding: 80px 0 30px;
     border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
